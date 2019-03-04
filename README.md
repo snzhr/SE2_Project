@@ -1,2 +1,8 @@
-# SE2_Project
-Project on Software Engineering-2 course 
+# Cinema Ticket Booking Android Application
+
+# This is a repo for Cinema Booking Application ...
+
+#Developers
+* Sanzhar
+* Daiyr
+* Sapar
