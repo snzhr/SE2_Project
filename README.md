@@ -1,3 +1,15 @@
 # Cinema Booking Mobile Aplication
 # This is platform for booking cinema tickets online 
-# Analitics: Akylbek Mursaliev
+# Cinema Ticket Booking Android Application
+
+# This is a repo for Cinema Booking Application ...
+
+* Analitics: Akylbek Mursaliev
+
+#Project Manager
+*Askarbek Baiasov
+
+#Developers
+* Sanzhar
+* Daiyr
+* Sapar
