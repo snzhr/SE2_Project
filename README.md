@@ -14,6 +14,7 @@
 
 #Requirements Engineer
 * Akylbek Mursaliev
+
 #Tester
 * Daniel Akylbekov
 
