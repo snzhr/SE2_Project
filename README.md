@@ -12,6 +12,8 @@
 * Daiyrbek Kanybekov
 * Saparbek Musaev
 
+#Requirements Engineer
+* Akylbek Mursaliev
 #Tester
 * Daniel Akylbekov
 
