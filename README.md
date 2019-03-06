@@ -4,12 +4,17 @@
 
 # This is a repo for Cinema Booking Application ...
 
-* Analitics: Akylbek Mursaliev
-
 #Project Manager
 *Askarbek Baiasov
 
 #Developers
-* Sanzhar
-* Daiyr
-* Sapar
+* Sanzhar Zhenishbek Uulu
+* Daiyrbek Kanybekov
+* Saparbek Musaev
+
+#Requirements Engineer
+* Akylbek Mursaliev
+#Tester
+* Daniel Akylbekov
+
+
