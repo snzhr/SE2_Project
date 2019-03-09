@@ -7,48 +7,41 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class StartActivity extends AppCompatActivity {
 
+    String emailHolder;
+    TextView Email;
     Button btnSignOut;
-    FirebaseAuth auth;
-    FirebaseUser user;
-    ProgressDialog PD;
+    FirebaseAuth mAuth;
+    FirebaseAuth.AuthStateListener mAuthListener;
+    FirebaseUser mUser;
 
+    public static final String TAG="LOGIN";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        auth = FirebaseAuth.getInstance();
-        user = auth.getCurrentUser();
+        Email = findViewById(R.id.hello);
+        btnSignOut = findViewById(R.id.sign_out);
 
-        PD = new ProgressDialog(this);
-        PD.setMessage("Loading...");
-        PD.setCancelable(true);
-        PD.setCanceledOnTouchOutside(false);
+        Intent intent = getIntent();
 
-        btnSignOut = (Button) findViewById(R.id.sign_out);
+        emailHolder = intent.getStringExtra(LoginActivity.userEmail);
 
         btnSignOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                auth.signOut();
-                FirebaseAuth.AuthStateListener authListener = new FirebaseAuth.AuthStateListener() {
-                    @Override
+                finish();
 
-                    public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                        FirebaseUser user = firebaseAuth.getCurrentUser();
-                        if (user == null) {
-                            startActivity(new Intent(StartActivity.this, LoginActivity.class));
-                            finish();
-                        }
-                    }
-                };
+                Toast.makeText(StartActivity.this, "Signed out successfully", Toast.LENGTH_LONG).show();
             }
         });
 
