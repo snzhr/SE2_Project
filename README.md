@@ -6,6 +6,6 @@
 *Askarbek Baiasov
 
 #Developers
-* Sanzhar
+* Sanzhar Zhenishbek uulu
 * Daiyr
 * Sapar
