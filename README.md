@@ -1,11 +1,28 @@
-# Cinema Ticket Booking Android Application
+# This is platform for booking cinema tickets online 
 
-# This is a repo for Cinema Booking Application ...
 
 #Project Manager (Team leader)
+#Project Manager
+
 *Askarbek Baiasov
 
 #Developers
-* Sanzhar
+
+* Sanzhar Zhenishbek uulu
 * Daiyr
 * Sapar
+
+
+* Sanzhar Zhenishbek Uulu
+* Daiyrbek Kanybekov
+* Saparbek Musaev
+
+#Requirements Engineer
+
+* Akylbek Mursaliev
+
+#Tester
+
+* Daniel Akylbekov
+
+
