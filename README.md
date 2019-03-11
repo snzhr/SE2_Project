@@ -1,6 +1,7 @@
 # This is platform for booking cinema tickets online 
 
 
+#Project Manager (Team leader)
 #Project Manager
 
 *Askarbek Baiasov
