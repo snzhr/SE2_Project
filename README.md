@@ -7,6 +7,11 @@
 
 #Developers
 
+* Sanzhar Zhenishbek uulu
+* Daiyr
+* Sapar
+
+
 * Sanzhar Zhenishbek Uulu
 * Daiyrbek Kanybekov
 * Saparbek Musaev
@@ -18,3 +23,5 @@
 #Tester
 
 * Daniel Akylbekov
+
+
