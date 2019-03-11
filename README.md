@@ -2,7 +2,7 @@
 
 # This is a repo for Cinema Booking Application ...
 
-#Project Manager
+#Project Manager (Team leader)
 *Askarbek Baiasov
 
 #Developers
