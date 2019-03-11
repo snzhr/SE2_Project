@@ -1,6 +1,5 @@
-# Cinema Booking Mobile Aplication
 # This is platform for booking cinema tickets online 
-# This is a repo for Cinema Booking Application ...
+
 
 #Project Manager
 
@@ -19,5 +18,3 @@
 #Tester
 
 * Daniel Akylbekov
-
-
