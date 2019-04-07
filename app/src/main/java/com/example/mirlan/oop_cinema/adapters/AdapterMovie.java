@@ -37,3 +37,29 @@ public class AdapterMovie extends RecyclerView.Adapter<AdapterMovie.ViewHolder> 
         holder.tvName.setText(movie.getName());
         Glide.with(holder.ivImage.getContext()).load(movie.getPoster()).into(holder.ivImage);
     }
+   @Override
+    public int getItemCount() {
+        return movies.size();
+    }
+
+    class ViewHolder extends RecyclerView.ViewHolder {
+
+        private ImageView ivImage;
+        private TextViewCustom tvName;
+
+        ViewHolder(View itemView) {
+            super(itemView);
+            ivImage = (ImageView) itemView.findViewById(R.id.itemImage);
+            tvName = (TextViewCustom) itemView.findViewById(R.id.itemName);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), ActivityMovieInfo.class);
+                    intent.putExtra(Const.MOVIE, movies.get(getAdapterPosition()));
+                    view.getContext().startActivity(intent);
+                }
+            });
+        }
+    }
+}
