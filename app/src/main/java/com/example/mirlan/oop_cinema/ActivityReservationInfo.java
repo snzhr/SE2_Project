@@ -67,3 +67,16 @@ public class ActivityReservationInfo extends AppCompatActivity {
 
         }
     }
+
+        @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home)
+            finish();
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void setupActionbar() {
+        setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+}
