@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/flagmans/Desktop/TicketBookingApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml",
+            "outputFile": "/home/flagmans/Desktop/SOFTWAREENG/SE2_Project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml",
             "map": [
                 {
                     "source": "/home/flagmans/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/28ce27039b3eacdeb52f522fe49b7058/res/values-ka/values-ka.xml",
