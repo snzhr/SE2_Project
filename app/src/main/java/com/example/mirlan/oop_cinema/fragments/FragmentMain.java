@@ -48,3 +48,30 @@ public class FragmentMain extends Fragment implements CallbackInterface {
             setAdapters(movies);
         }
     }
+ private void setAdapters(final ArrayList<Genre> movies) {
+        this.movies = movies;
+        genres.setAdapter(new AdapterMain(movies));
+    }
+
+    @Override
+    public void dataRetrieved(final ArrayList<Genre> movies) {
+        getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                setAdapters(movies);
+            }
+        });
+    }
+
+    @Override
+    public void canceled() {
+        Toast.makeText(getContext(), "Canceled", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onDestroy() {
+        if (retrieveDataThread != null)
+            retrieveDataThread.interrupt();
+        super.onDestroy();
+    }
+}
