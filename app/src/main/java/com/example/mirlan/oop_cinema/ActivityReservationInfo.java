@@ -48,3 +48,22 @@ public class ActivityReservationInfo extends AppCompatActivity {
 
         Glide.with(this).load(mMovie.getPoster()).into(binding.poster);
     }
+     public void onClick(View view) {
+        int id = view.getId();
+        if (id == R.id.confirm) {
+            if (User.getUser().handlePayment(this, toPay)) {
+                Database.getInstance(this).updateSeatsOfMovie(mMovie.getName(), seats, true);
+                Database.getInstance(this).saveUserReservation(User.getUser().getUsername(),
+                        mMovie.getId(),
+                        seats.size(),
+                        seats.toString(),
+                        System.currentTimeMillis());
+                Toast.makeText(this, "Payment is successful!", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(this, ActivityMain.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            } else Toast.makeText(this, "Payment Failed", Toast.LENGTH_LONG).show();
+        } else if (id == R.id.aboutMovie) {
+
+        }
+    }
