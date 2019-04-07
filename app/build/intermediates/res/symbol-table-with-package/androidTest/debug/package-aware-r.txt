@@ -1,0 +1,1 @@
+com.example.mirlan.oop_cinema.test
