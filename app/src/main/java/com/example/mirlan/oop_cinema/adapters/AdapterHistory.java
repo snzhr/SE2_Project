@@ -61,3 +61,30 @@ public class AdapterHistory extends RecyclerView.Adapter<AdapterHistory.ViewHold
         Glide.clear(holder.poster);
         super.onViewRecycled(holder);
     }
+  @Override
+    public int getItemCount() {
+        return reservations.size();
+    }
+
+    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+        private ImageView poster;
+        private TextView tvMovieName, tvDescription, tvReservAmt, tvReservCost, tvTimestamp;
+
+        ViewHolder(View itemView) {
+            super(itemView);
+            poster = (ImageView) itemView.findViewById(R.id.poster);
+            tvMovieName = (TextView) itemView.findViewById(R.id.movieName);
+            tvDescription = (TextView) itemView.findViewById(R.id.tvDescription);
+            tvReservAmt = (TextView) itemView.findViewById(R.id.tvReservationAmt);
+            tvReservCost = (TextView) itemView.findViewById(R.id.tvReservationCost);
+            tvTimestamp = (TextView) itemView.findViewById(R.id.timestamp);
+            itemView.findViewById(R.id.aboutMovie).setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+
+        }
+    }
+}
