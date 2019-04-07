@@ -38,4 +38,33 @@ public class ActivityMovieInfo extends AppCompatActivity implements View.OnClick
 
         findViewById(R.id.order).setOnClickListener(this);
     }
-    
+
+     @Override
+    public void onClick(View view) {
+        int id = view.getId();
+        if (id == R.id.order) {
+            Intent intent;
+            if (User.getUser() instanceof UserAnonymous) {
+                intent = new Intent(this, ActivitySignIn.class);
+                intent.putExtra(Const.STARTRESACTIVITY, true);
+            }
+            else intent = new Intent(this, ActivitySeatReservation.class);
+            intent.putExtra(Const.MOVIE, movie);
+            startActivity(intent);
+        }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home)
+            finish();
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void setupActionbar() {
+        setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+    }
+}
+
