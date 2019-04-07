@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    android:minHeight="200dp"
+    android:theme="@style/OrderInfo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp">
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:scaleType="fitXY"/>
+
+        <com.example.mirlan.oop_cinema.helpers.TextViewCustom
+            android:id="@+id/movieName"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_margin="8dp"
+            android:layout_toEndOf="@id/poster"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            app:customFont="@string/latoMedium"/>
+
+        <com.example.mirlan.oop_cinema.helpers.TextViewCustom
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/movieName"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toEndOf="@id/poster"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textSize="16sp"
+            app:customFont="@string/latoLight"/>
+
+        <com.example.mirlan.oop_cinema.helpers.TextViewCustom
+            android:id="@+id/aboutMovie"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_alignBottom="@+id/poster"
+            android:layout_margin="8dp"
+            android:layout_toEndOf="@+id/poster"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:padding="6dp"
+            android:text="@string/more"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            app:customFont="@string/latoMedium"/>
+
+        <com.example.mirlan.oop_cinema.helpers.TextViewCustom
+            android:id="@+id/tvReservationAmt"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/aboutMovie"
+            android:padding="6dp"
+            android:textSize="16sp"
+            app:customFont="@string/latoLight"/>
+
+        <com.example.mirlan.oop_cinema.helpers.TextViewCustom
+            android:id="@+id/tvReservationCost"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/tvReservationAmt"
+            android:padding="6dp"
+            android:textSize="16sp"
+            app:customFont="@string/latoMedium"/>
+
+        <com.example.mirlan.oop_cinema.helpers.TextViewCustom
+            android:id="@+id/timestamp"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvReservationAmt"
+            android:gravity="end"
+            android:padding="8dp"
+            android:textSize="14sp"
+            app:customFont="@string/latoLightCursive"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
