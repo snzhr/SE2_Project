@@ -10,7 +10,6 @@ import com.example.acer.oopproject.R;
 import java.util.ArrayList;
 
 
-
 public class AdapterSeats extends RecyclerView.Adapter<AdapterSeats.ViewHolder> {
 
     private int SEATS = 81;
@@ -36,3 +35,35 @@ public class AdapterSeats extends RecyclerView.Adapter<AdapterSeats.ViewHolder> 
 
         holder.tvSeat.setText(String.valueOf(pos));
     }
+    @Override
+    public int getItemCount() {
+        return SEATS;
+    }
+
+    class ViewHolder extends RecyclerView.ViewHolder {
+
+        private TextView tvSeat;
+
+        ViewHolder(View itemView) {
+            super(itemView);
+            tvSeat = (TextView) itemView;
+            tvSeat.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Integer position = getAdapterPosition() + 1;
+                    if (userChoices.contains(position)) {
+                        view.setBackgroundResource(R.drawable.seat_free);
+                        userChoices.remove(position);
+                    } else if (reservedSeats.contains(position))
+                        Toast.makeText(view.getContext(), "Reserved already", Toast.LENGTH_SHORT).show();
+                    else if (userChoices.size() >= 8)
+                        Toast.makeText(view.getContext(), "Can't reserve > 8", Toast.LENGTH_SHORT).show();
+                    else {
+                        view.setBackgroundResource(R.drawable.seat_choice);
+                        userChoices.add(position);
+                    }
+                }
+            });
+        }
+    }
+}
