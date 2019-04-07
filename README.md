@@ -3,20 +3,20 @@
 ## This is platform for booking cinema tickets online 
 
 
-#Project Manager
+### Project Manager
 
-*Askarbek Baiasov
+* Askarbek Baiasov
 
-#Developers
+### Developers
 
 * Sanzhar Zhenishbek Uulu
 * Daiyrbek Kanybekov
 * Saparbek Musaev
 
-#Requirements Engineer
+### Requirements Engineer
 
 * Akylbek Mursaliev
 
-#Tester
+### Tester
 
 * Daniel Akylbekov
