@@ -38,3 +38,4 @@ public class ActivityMovieInfo extends AppCompatActivity implements View.OnClick
 
         findViewById(R.id.order).setOnClickListener(this);
     }
+    
