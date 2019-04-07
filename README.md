@@ -20,3 +20,6 @@
 ### Tester
 
 * Daniel Akylbekov
+
+### This application about booking cinema tickets online from mobile phone. 
+### This application going to developed for making easier booking teckets.
