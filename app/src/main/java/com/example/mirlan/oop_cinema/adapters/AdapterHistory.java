@@ -37,3 +37,27 @@ public class AdapterHistory extends RecyclerView.Adapter<AdapterHistory.ViewHold
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(mInflater.inflate(R.layout.item_history, parent, false));
     }
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        Reservation reservation = reservations.get(position);
+        Movie movie = reservation.getMovie();
+
+        holder.tvMovieName.setText(movie.getName());
+        holder.tvDescription.setText(movie.getDescription());
+        holder.tvReservAmt.setText(String.format("Количество мест %s - %s",
+                String.valueOf(reservation.getSeatAmt()), reservation.getSeatNums()));
+
+        holder.tvReservCost.setText(String.format("Итого %s",
+                String.valueOf(movie.getCost() * reservation.getSeatAmt())));
+
+        holder.tvTimestamp.setText(format.format(new Date(reservation.getTimestamp())));
+
+        Glide.with(context).load(movie.getPoster()).into(holder.poster);
+    }
+
+    @Override
+    public void onViewRecycled(ViewHolder holder) {
+        Log.e("TAG", "position being released --> " + holder.getAdapterPosition());
+        Glide.clear(holder.poster);
+        super.onViewRecycled(holder);
+    }
