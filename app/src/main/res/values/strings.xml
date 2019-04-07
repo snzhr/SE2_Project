@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">try1</string>
+    <string name="app_name">Cinema</string>
+
+    <string name="latoMedium" translatable="false">Lato-Medium.ttf</string>
+    <string name="latoLight" translatable="false">Lato-Light.ttf</string>
+    <string name="latoLightCursive" translatable="false">Lato-LightItalic.ttf</string>
+    <string name="latoRegular" translatable="false">Lato-Regular.ttf</string>
+
+    <string name="order">Забронировать</string>
+
+    <string name="more">Подробнее</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="cash">На счету</string>
+    <string name="profile">Профиль</string>
+
+    <string name="next">Далее</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_out">Выйти</string>
+    <string name="registration">Регистрация</string>
+    <string name="login">вход</string>
+    <string name="username">Имя пользователя</string>
+    <string name="password">Пароль</string>
+    <string name="hintConfirm">Подтвердите пароль</string>
+    <string name="createAcc">Создать</string>
+    <string name="forgotPassword">Забыли пароль?</string>
+    <!--<string state="resetPassword">Восстановление пароля</string>
+    <string state="resetInfo">Ссылка на восстановление пароля будет отправлена на ваш адрес эл. почты</string>
+    <string state="resetSend">Отправить</string>
+    <string state="resetSentUnsuccessful">Такой электронный адрес не существует</string>-->
+
 </resources>
