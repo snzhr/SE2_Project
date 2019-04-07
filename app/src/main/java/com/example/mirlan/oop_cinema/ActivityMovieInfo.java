@@ -38,6 +38,7 @@ public class ActivityMovieInfo extends AppCompatActivity implements View.OnClick
 
         findViewById(R.id.order).setOnClickListener(this);
     }
+
      @Override
     public void onClick(View view) {
         int id = view.getId();
