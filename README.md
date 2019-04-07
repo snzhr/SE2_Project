@@ -1,4 +1,6 @@
-# This is platform for booking cinema tickets online 
+# Cinema Booking Application
+
+## This is platform for booking cinema tickets online 
 
 
 #Project Manager
