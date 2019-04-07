@@ -18,9 +18,7 @@ import com.example.mirlan.oop_cinema.oop.User;
 
 import java.util.ArrayList;
 
-/**
- * Created by Mirlan on 05.12.2016.
- */
+
 public class ActivityReservationInfo extends AppCompatActivity {
 
     private Movie mMovie;
