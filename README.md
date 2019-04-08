@@ -1,3 +1,4 @@
+
 # Cinema Booking Application
 
 ## This is platform for booking cinema tickets online 
@@ -23,3 +24,7 @@
 
 ### This application about booking cinema tickets online from mobile phone. 
 ### This application going to developed for making easier booking teckets.
+
+#SE2_Project
+*Project on Software Engineering-2 course 
+

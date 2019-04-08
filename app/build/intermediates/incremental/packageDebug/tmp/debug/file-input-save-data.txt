@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sun Apr 07 14:39:28 KGT 2019
+0.baseType=DIRECTORY
+0.base=/home/flagmans/Desktop/TicketBookingApp/app/build/intermediates/transforms/dexMerger/debug/0
+0.path=classes.dex
+0.set=DEX
+count=1
