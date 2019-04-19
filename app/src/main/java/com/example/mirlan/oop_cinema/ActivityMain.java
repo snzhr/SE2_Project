@@ -82,3 +82,17 @@ public class ActivityMain extends AppCompatActivity {
             reference.child("movies").push().setValue(movies.get(i));
         }
     }*/
+     private ArrayList<Movie> getArray() {
+        ArrayList<Movie> movies = new ArrayList<>();
+        movies.add(new Movie("Плохой Санта 2",
+                "https://www.kinopoisk.ru/images/film_big/577229.jpg",
+                "Комедии",
+                "Еще более дикий. Еще более пьяный. Еще более плохой",
+                "Продолжение новогодних приключений проходимца Вилли, который в канун Рождества, как всегда, переодевается в Санта-Клауса. Ограбить очередной супермаркет в этом наряде не представляет никаких проблем. Но в Рождество случаются всякие чудеса. Каким оно будет для Вилли на этот раз?",
+                190));
+        movies.add(new Movie("Миссия: Неадекватна",
+                "https://www.kinopoisk.ru/images/film_big/895894.jpg",
+                "Комедии",
+                "One man''s wildly true quest to capture Osama Bin Laden",
+                "Абсолютно безумная и уморительная история обычного американского гражданина, который по поручению Всевышнего решает в одиночку поймать Усаму бен Ладена. Когда миру нужен герой, Гэри спешит на помощь!",
+                150));
