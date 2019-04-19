@@ -37,3 +37,10 @@ public class ActivityMain extends AppCompatActivity {
                     .replace(R.id.mainContainer, new FragmentMain())
                     .commit();
     }
+        @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQCODE && resultCode == RESULT_OK) {
+            invalidateOptionsMenu();
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
