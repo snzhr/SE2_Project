@@ -59,3 +59,10 @@ public class ActivityMain extends AppCompatActivity {
         }
         return super.onCreateOptionsMenu(menu);
     }
+     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.signIn) {
+            if (User.getUser() instanceof UserRegistered) {
+                User.signOut();
+                invalidateOptionsMenu();
+            }
