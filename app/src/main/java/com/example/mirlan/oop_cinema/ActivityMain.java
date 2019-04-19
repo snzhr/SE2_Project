@@ -44,3 +44,11 @@ public class ActivityMain extends AppCompatActivity {
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        if (User.getUser() instanceof UserAnonymous) {
+            menu.getItem(0).setVisible(false);
+            menu.getItem(0).setEnabled(false);
+            menu.getItem(1).setTitle(R.string.sign_in);
+        }
