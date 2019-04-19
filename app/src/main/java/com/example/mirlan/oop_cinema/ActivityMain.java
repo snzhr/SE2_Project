@@ -66,3 +66,13 @@ public class ActivityMain extends AppCompatActivity {
                 User.signOut();
                 invalidateOptionsMenu();
             }
+               else
+                startActivityForResult(new Intent(this, ActivitySignIn.class), REQCODE);
+            return true;
+        }
+        else if (item.getItemId() == R.id.profile) {
+            startActivity(new Intent(this, ActivityUserProfile.class));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
