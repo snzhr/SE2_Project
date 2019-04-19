@@ -76,3 +76,9 @@ public class ActivityMain extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    /*public void saveToFirebase(ArrayList<Movie> movies) {
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
+        for (int i = 0; i < movies.size(); i++) {
+            reference.child("movies").push().setValue(movies.get(i));
+        }
+    }*/
