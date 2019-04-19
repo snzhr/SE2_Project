@@ -52,3 +52,10 @@ public class ActivityMain extends AppCompatActivity {
             menu.getItem(0).setEnabled(false);
             menu.getItem(1).setTitle(R.string.sign_in);
         }
+         else {
+            menu.getItem(0).setVisible(true);
+            menu.getItem(0).setEnabled(true);
+            menu.getItem(1).setTitle(R.string.sign_out);
+        }
+        return super.onCreateOptionsMenu(menu);
+    }
