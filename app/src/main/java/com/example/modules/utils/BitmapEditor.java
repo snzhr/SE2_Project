@@ -268,3 +268,36 @@ public final class BitmapEditor {
 
         return (bitmap);
     }
+     public static boolean PerceivedBrightness( int will_White, int[] c)
+    {
+        double TBT= Math.sqrt(c[0] * c[0] * .241 +c[1] * c[1] * .691 +c[2] * c[2] * .068);
+        //    Log.d("themee",TBT+"");
+        return (TBT > will_White) ? false: true;
+    }
+
+    public static int[] getAverageColorRGB(Bitmap bitmap) {
+        final int width = bitmap.getWidth();
+        final int height = bitmap.getHeight();
+        int size = width * height;
+        int pixelColor;
+        int r, g, b;
+        r = g = b = 0;
+        for (int x = 0; x < width; ++x) {
+            for (int y = 0; y < height; ++y) {
+                pixelColor = bitmap.getPixel(x, y);
+                if (pixelColor == 0) {
+                    size--;
+                    continue;
+                }
+                r += Color.red(pixelColor);
+                g += Color.green(pixelColor);
+                b += Color.blue(pixelColor);
+            }
+        }
+        r /= size;
+        g /= size;
+        b /= size;
+        return new int[] {
+                r, g, b
+        };
+    }
