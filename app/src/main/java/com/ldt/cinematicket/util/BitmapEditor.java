@@ -275,3 +275,50 @@ public final class BitmapEditor {
         //    Log.d("themee",TBT+"");
         return (TBT > will_White) ? false: true;
     }
+
+    public static int[] getAverageColorRGB(Bitmap bitmap) {
+        final int width = bitmap.getWidth();
+        final int height = bitmap.getHeight();
+        int size = width * height;
+        int pixelColor;
+        int r, g, b;
+        r = g = b = 0;
+        for (int x = 0; x < width; ++x) {
+            for (int y = 0; y < height; ++y) {
+                pixelColor = bitmap.getPixel(x, y);
+                if (pixelColor == 0) {
+                    size--;
+                    continue;
+                }
+                r += Color.red(pixelColor);
+                g += Color.green(pixelColor);
+                b += Color.blue(pixelColor);
+            }
+        }
+        r /= size;
+        g /= size;
+        b /= size;
+        return new int[] {
+                r, g, b
+        };
+    }
+    public static Bitmap updateSat(Bitmap src, float settingSat) {
+
+        int w = src.getWidth();
+        int h = src.getHeight();
+
+        Bitmap bitmapResult =
+                Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+        Canvas canvasResult = new Canvas(bitmapResult);
+        Paint paint = new Paint();
+        ColorMatrix colorMatrix = new ColorMatrix();
+        colorMatrix.setSaturation(settingSat);
+        ColorMatrixColorFilter filter = new ColorMatrixColorFilter(colorMatrix);
+        paint.setColorFilter(filter);
+        canvasResult.drawBitmap(src, 0, 0, paint);
+        canvasResult.setBitmap(null);
+        canvasResult = null;
+        return bitmapResult;
+    }
+
+
