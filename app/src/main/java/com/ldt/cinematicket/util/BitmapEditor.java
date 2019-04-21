@@ -269,3 +269,9 @@ public final class BitmapEditor {
 
         return (bitmap);
     }
+    public static boolean PerceivedBrightness( int will_White, int[] c)
+    {
+        double TBT= Math.sqrt(c[0] * c[0] * .241 +c[1] * c[1] * .691 +c[2] * c[2] * .068);
+        //    Log.d("themee",TBT+"");
+        return (TBT > will_White) ? false: true;
+    }
