@@ -1,4 +1,0 @@
-#Sun Apr 07 14:39:27 KGT 2019
-base.0=/home/flagmans/Desktop/TicketBookingApp/app/build/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex
