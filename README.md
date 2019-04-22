@@ -25,5 +25,4 @@
 ### This application about booking cinema tickets online from mobile phone. 
 ### This application going to developed for making easier booking teckets.
 
-For more information [wiki](https://github.com/snzhr/SE2_Project/wiki)
-
+More information [wiki](https://github.com/snzhr/SE2_Project/wiki)
