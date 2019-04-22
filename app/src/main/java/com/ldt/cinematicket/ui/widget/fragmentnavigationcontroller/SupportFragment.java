@@ -13,8 +13,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.ldt.cinematicket.ui.main.MainActivity;
-
 import java.lang.ref.WeakReference;
 
 
