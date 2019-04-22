@@ -1,28 +1,28 @@
-# This is platform for booking cinema tickets online 
+
+# Cinema Booking Application
+
+## This is platform for booking cinema tickets online 
 
 
-#Project Manager (Team leader)
-#Project Manager
+### Project Manager
 
-*Askarbek Baiasov
+* Askarbek Baiasov
 
-#Developers
-
-* Sanzhar Zhenishbek uulu
-* Daiyr
-* Sapar
-
+### Developers
 
 * Sanzhar Zhenishbek Uulu
 * Daiyrbek Kanybekov
 * Saparbek Musaev
 
-#Requirements Engineer
+### Requirements Engineer
 
 * Akylbek Mursaliev
 
-#Tester
+### Tester
 
 * Daniel Akylbekov
 
+### This application about booking cinema tickets online from mobile phone. 
+### This application going to developed for making easier booking teckets.
 
+More information [wiki](https://github.com/snzhr/SE2_Project/wiki)
