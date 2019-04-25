@@ -26,3 +26,20 @@
 ### This application going to developed for making easier booking teckets.
 
 More information [wiki](https://github.com/snzhr/SE2_Project/wiki)
+
+
+# Please developers create and send me this diagrams
+
+# Use-case Diagrams
+
+# Activity Diagrams
+
+
+# Sequence Diagrams
+
+
+# Class Diagrams
+
+
+# Data Design
+
