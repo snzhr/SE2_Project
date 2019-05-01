@@ -23,8 +23,6 @@
 * Daniel Akylbekov
 
 ### This application about booking cinema tickets online from mobile phone. 
-Screenshots
-![Alt text](https://github.com/snzhr/SE2_Project/blob/master/Screenshots/device-2019-05-01-201648.png
-?raw=true "Optional Title")
+
 
 More information [wiki](https://github.com/snzhr/SE2_Project/wiki)
