@@ -1,2 +1,0 @@
-# Referenced at C:\Users\Daiyr\Downloads\CinemaTicket-master\CinemaTicket-master\app\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17
--keep class android.support.multidex.MultiDexApplication { <init>(...); }
