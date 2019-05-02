@@ -1,12 +1,11 @@
-
 # Cinema Booking Application
 
-## This is platform for booking cinema tickets online 
+## Abstract
+* Cinema Application is aimed to provide information of the movie in more usable way, according to which they can book the tickets in registered theatre by user. It proceeds through a sequence of well designed forms provided with validations to ensure consistency, reliability and most importantly correctness of information. Here, User is responsible for the registration of the User Account, The user can  Change password, can view number of  seats available and can book tickets. Whereas, Administrator is responsible for maintaining right information about the movies, seat availability, employee details and many more things. 
+feature of the project is that is user can book ticket only by less clicks of the screen.
 
 
-### Project Manager
-
-* Askarbek Baiasov
+### Project Manager Askarbek Baiasov
 
 ### Developers
 
@@ -22,7 +21,4 @@
 
 * Daniel Akylbekov
 
-### This application about booking cinema tickets online from mobile phone. 
-### This application going to developed for making easier booking teckets.
-
-More information [wiki](https://github.com/snzhr/SE2_Project/wiki)
+### More information [wiki](https://github.com/snzhr/SE2_Project/wiki)
